@@ -1,0 +1,103 @@
+body {
+    /* Font */
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    height: 100vh;
+
+    background-color: #b4508e;
+}
+
+#main-container {
+    /* Background */
+    background-image: url("assets/images/708a8576c5c96d90b10f3bfd82d8df3f.jpg");
+    background-attachment: fixed;
+    background-position: center;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 20px;
+
+    width: 90%;
+    height: 80%;
+    max-width: 1585px;
+    max-height: 938px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+form {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    width: 60%;
+
+
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);  
+    backdrop-filter: blur(0px);
+}
+
+button {
+    /* Font */
+    font-family: "Fjalla One", sans-serif;
+
+    /* Layout */
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+    background-color: #173c77;
+    color: white;
+}
+
+button:hover {
+    background-color: #f53468;
+    color: #173c77;
+}
+
+#results {
+    display: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.15);  
+    backdrop-filter: blur(0px);
+
+    color: white;
+
+    width: 60%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+

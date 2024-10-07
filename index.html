@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fuel Cost Estimator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="main-container">
+
+            <header>
+                <h1>Roadtrip</h1>
+                <h1>Fuel Cost Estimator</h1>
+            </header>
+
+            <form id="trip-form" name="trip-form">
+
+                
+                <label for="start">Starting Location:</label>
+                <input type="text" id="start" name="start" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                
+
+                
+                <label for="mpg">Car MPG:</label>
+                <input type="number" id="mpg" name="mpg" placeholder="e.g. 25" required>
+
+                <label for="tank-size">Tank Size (gallons):</label>
+                <input type="number" id="tank-size" name="tank-size" placeholder="e.g. 15" required>
+                
+
+                <label for="round-trip">
+                    <input type="checkbox" id="round-trip" name="round-trip"> Round Trip
+                </label>
+
+                <button type="submit">Calculate Fuel Costs</button>
+            </form>
+
+            <div id="results"></div>
+
+
+            <script src="app.js"></script>
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYgnTJn54SwY8BWLPwKqzbXGR1i4zEyrQ&libraries=places"></script>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Fuel Cost Estimator. All rights reserved.</p>
+            <p>Powered by Google Maps and CollectAPI</p> <!-- Updated footer for Google Maps usage -->
+        </footer>
+
+    </body>
+
+    
+
+</html>
